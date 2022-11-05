@@ -7,11 +7,16 @@ const Todos1 = () => {
   //addData, clearData, removeDataByIndex
     const {data,addData, clearData, removeDataByIndex} = useTodos(["Task1","Task2","Task3"])
     const [inp,setInp] = useState("")
+
+
+    const handleClick=()=>{
+      addData(inp)
+    }
   return (
     <div data-testid='todos1'>
         <h1 data-testid='todos1-label'>Todos-1</h1>
         <input data-testid='todos1-input' value={inp} onChange={(e)=>setInp(e.target.value)}/>
-        <button data-testid='todos1-add' onClick={()=>addData(inp)}>Add Task</button>
+        <button data-testid='todos1-add' onClick={handleClick}>Add Task</button>
       <div>
        {/* Loop through the todo data that you are getting from the useTodos hook to render the tasks with their name, and a delete button with each task */}
           {data.map((ele,ind)=>
