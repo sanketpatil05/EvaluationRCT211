@@ -1,10 +1,10 @@
 //get the data parameter here, and you can store it in a local useState.
 import { useState } from "react";
 
-export const useTodos = (initialData = ["Task1"]) => {
+export const useTodos = (initialData = ["Task100"]) => {
   const [data, setMydata] = useState(initialData);
   const addData = (payload) => {
-    console.log("hk", payload);
+  
     setMydata([...data, payload]);
   };
 

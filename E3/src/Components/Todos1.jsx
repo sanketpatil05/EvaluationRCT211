@@ -5,7 +5,7 @@ const Todos1 = () => {
 
   //use the initialData that you are getting from the props to be used, as the initial argument for useTodos hook
   //addData, clearData, removeDataByIndex
-    const {data,addData, clearData, removeDataByIndex} = useTodos(["Task1","Task2","Task3"])
+    const {data,addData, clearData, removeDataByIndex} = useTodos()
     const [inp,setInp] = useState("")
 
 
