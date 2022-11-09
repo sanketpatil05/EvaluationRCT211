@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <h1>Counter:{counter}</h1>
-      <button onClick={()=> dispatch({type;l})}>Increment</button>
+      <button onClick={()=> dispatch(handleIncrement())}>Increment</button>
       <button onClick={()=> dispatch(handleDecrement())}>Decrement</button>
     </div>
   );
