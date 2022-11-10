@@ -1,0 +1,7 @@
+
+function na(num){
+ 
+     
+
+
+}
