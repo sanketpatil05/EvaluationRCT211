@@ -15,7 +15,7 @@ for(let i=0; i<b.length; i++){
 console.log("a");
 async function wait(){
 
-  function x(){
+   function x(){
     setTimeout(()=>{
         return  console.log("b");
      },1000)
