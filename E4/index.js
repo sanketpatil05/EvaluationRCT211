@@ -11,7 +11,7 @@ for(let i=0; i<b.length; i++){
     }
 }
 
-//console.log(ans);
+console.log(ans);
 console.log("a");
 async function wait(){
 
