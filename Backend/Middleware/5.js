@@ -5,3 +5,5 @@
 
 // mongod  queries 
 // find().pretty()
+// replace is like put 
+// update is like patch
