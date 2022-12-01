@@ -1,0 +1,4 @@
+MVC :- M -model means model of your collection 
+       V- View means what ever we sees in UI 
+       C- Controller in the which we are wrinting the logic for controlling 
+
