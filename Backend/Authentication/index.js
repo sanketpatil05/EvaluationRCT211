@@ -7,6 +7,10 @@ app.use(express.json())
 app.get("/", (req, res)=>{
     res.send("You are on hompage")
 })
+
+app.get("/about", (req, res)=>{
+    res.send("You are on about")
+})
 app.listen(8000, async()=>{
     try {
            await connect 
