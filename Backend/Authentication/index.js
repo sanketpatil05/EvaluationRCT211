@@ -1,5 +1,6 @@
 const express= require("express");
-const {connect}= require("./db")
+const {connect}= require("./db");
+const { UserModel } = require("./Model/User.mode");
 const app=express();
 app.use(express.json())
 
@@ -8,12 +9,26 @@ app.get("/", (req, res)=>{
     res.send("You are on hompage and this ishjjgjh homepage ")
 })
 
-app.get("/about", (req, res)=>{
-    res.send("You are on about and  and aovadfalhkjbut page")
+app.get("/student", async(req, res)=>{
+
+  const users= await UserModel.find();
+
+
+    res.send(users)
 })
 
-app.get("/contact", (req, res)=>{
-res.send("You are on contact")
+
+
+app.post("/add", async(req, res)=>{
+    const data= req.body; 
+    
+    // const user= new UserModel(data)
+
+    // await user.save();
+    // res.send(user);
+
+    const user= await UserModel.insertMany([data])
+    res.send(user)
 })
 
 
