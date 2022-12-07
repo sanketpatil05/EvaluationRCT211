@@ -9,7 +9,7 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/about", (req, res)=>{
-    res.send("You are on about and  and aovlhkjbut page")
+    res.send("You are on about and  and aovadfalhkjbut page")
 })
 
 app.get("/contact", (req, res)=>{
@@ -18,13 +18,13 @@ res.send("You are on contact")
 
 
 app.listen(8000, async()=>{
-    // try {
-    //        await connect 
-    //        console.log("conntect to db")
-    // }
-    // catch (err){
-    //     console.log(err);
-    // }
+    try {
+           await connect 
+           console.log("conntect to db")
+    }
+    catch (err){
+        console.log(err);
+    }
 
 
     console.log("Server is running at port of  8000")
