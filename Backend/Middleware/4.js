@@ -32,11 +32,15 @@ app.use(timelogger)
 // here timelogger is custom middlare ware 
 
 app.get("/", (req, res)=>{
-   res.send("You are on hompage")
+   res.send("You are on hsdfompage")
 })
 
 app.get("/contact", (req, res)=>{
     res.send("You are on contact page")
+})
+
+app.get("/about", (req, res)=>{
+    res.send("You are on about page")
 })
 
 app.listen(5000, ()=>{
