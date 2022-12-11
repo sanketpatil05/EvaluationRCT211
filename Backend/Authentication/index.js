@@ -6,7 +6,7 @@ app.use(express.json())
 
 
 app.get("/", (req, res)=>{
-    res.send("You are on hompage and this ishjjgjh homepage ")
+    res.send("You are on and is te aksdf;l homepage ")
 })
 
 app.get("/student", async(req, res)=>{
@@ -33,13 +33,13 @@ app.post("/add", async(req, res)=>{
 
 
 app.listen(8000, async()=>{
-    try {
-           await connect 
-           console.log("conntect to db")
-    }
-    catch (err){
-        console.log(err);
-    }
+    // try {
+    //        await connect 
+    //        console.log("conntect to db")
+    // }
+    // catch (err){
+    //     console.log(err);
+    // }
 
 
     console.log("Server is running at port of  8000")
