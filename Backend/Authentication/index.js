@@ -30,7 +30,16 @@ app.post("/add", async(req, res)=>{
     const user= await UserModel.insertMany([data])
     res.send(user)
 })
-
+app.post("/signup", async(req, res)=>{
+    const data= req.body; 
+    const user_email= await UserModel.findOne({email:data.email})
+       
+    if(user_email){
+      return   res.send("Email already exits");
+    }
+    const user= await UserModel.insertMany([data]);
+    res.send(user, "user registered")
+})
 
 app.listen(8000, async()=>{
     // try {
