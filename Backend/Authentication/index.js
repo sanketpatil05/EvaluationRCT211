@@ -6,7 +6,7 @@ app.use(express.json())
 
 
 app.get("/", (req, res)=>{
-    res.send("You are on and is adadsfdsfdfasd homepage ")
+    res.send("You are on and is adadsfdsdfasfls sfdfasd homepage ")
 })
 
 app.get("/student", async(req, res)=>{
